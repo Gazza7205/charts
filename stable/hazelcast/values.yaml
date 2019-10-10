@@ -39,8 +39,8 @@ hazelcast:
             enabled: false
           kubernetes:
             enabled: true
-            service-name: ${serviceName}
-            namespace: ${namespace}
+            service-name: gw-hazelcast
+            namespace: dev
             resolve-not-ready-addresses: true
       management-center:
         enabled: ${hazelcast.mancenter.enabled}
